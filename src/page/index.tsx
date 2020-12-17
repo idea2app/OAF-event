@@ -31,7 +31,7 @@ const menu = [
     //  },
     {
         title: '鸣谢',
-        href: '#partners'
+        href: '#thanks'
     }
 ];
 
@@ -41,6 +41,7 @@ export function PageFrame() {
             <NavBar
                 narrow
                 menuAlign="end"
+                background="primary"
                 brand={
                     <img
                         alt="WebCell scaffold"
@@ -50,7 +51,9 @@ export function PageFrame() {
                 }
             >
                 {menu.map(({ title, ...props }) => (
-                    <NavLink {...props}>{title}</NavLink>
+                    <NavLink className="text-white" {...props}>
+                        {title}
+                    </NavLink>
                 ))}
             </NavBar>
 
@@ -65,22 +68,29 @@ export function PageFrame() {
                 ]}
             />
             <footer className="text-center bg-light py-5">
-                Proudly developed with
-                <a
-                    className="mx-1"
-                    target="_blank"
-                    href="https://web-cell.dev/"
-                >
-                    WebCell v2
-                </a>
-                &amp;
-                <a
-                    className="mx-1"
-                    target="_blank"
-                    href="https://bootstrap.web-cell.dev/"
-                >
-                    BootCell v1
-                </a>
+                <p>
+                    Copyright 2020 OPENATOM. All Rights Reserved
+                    <br />
+                    开放原子开源基金会版权所有
+                </p>
+                <p>
+                    Proudly developed with
+                    <a
+                        className="mx-1"
+                        target="_blank"
+                        href="https://web-cell.dev/"
+                    >
+                        WebCell v2
+                    </a>
+                    &amp;
+                    <a
+                        className="mx-1"
+                        target="_blank"
+                        href="https://bootstrap.web-cell.dev/"
+                    >
+                        BootCell v1
+                    </a>
+                </p>
             </footer>
         </>
     );
