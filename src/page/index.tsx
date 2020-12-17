@@ -4,23 +4,34 @@ import { NavBar } from 'boot-cell/source/Navigator/NavBar';
 import { NavLink } from 'boot-cell/source/Navigator/Nav';
 
 import { history } from '../model';
-import WebCell_0 from '../image/WebCell-0.png';
+import logo from '../image/logo.png';
 
-import { Hello } from './Hello';
-import { CellClock } from './Clock';
+import { HomePage } from './Home';
 
 const menu = [
     {
-        title: 'Hello',
-        href: 'hello'
+        title: '首页',
+        href: 'https://www.openatom.org/'
     },
     {
-        title: 'Clock',
-        href: 'clock'
+        title: '峰会介绍',
+        href: '#about'
     },
     {
-        title: 'GitHub source',
-        href: 'https://github.com/EasyWebApp/scaffold'
+        title: '与会嘉宾',
+        href: '#guest'
+    },
+    {
+        title: '日程安排',
+        href: '#agenda'
+    },
+    //  {
+    //      title: '大会指引',
+    //      href: '#register'
+    //  },
+    {
+        title: '鸣谢',
+        href: '#partners'
     }
 ];
 
@@ -29,11 +40,12 @@ export function PageFrame() {
         <>
             <NavBar
                 narrow
+                menuAlign="end"
                 brand={
                     <img
                         alt="WebCell scaffold"
-                        src={WebCell_0}
-                        style={{ width: '2rem' }}
+                        src={logo}
+                        style={{ height: '2rem' }}
                     />
                 }
             >
@@ -43,17 +55,12 @@ export function PageFrame() {
             </NavBar>
 
             <CellRouter
-                className="container"
                 style={{ minHeight: '60vh' }}
                 history={history}
                 routes={[
                     {
-                        paths: ['clock'],
-                        component: CellClock
-                    },
-                    {
-                        paths: ['hello', ''],
-                        component: Hello
+                        paths: [''],
+                        component: HomePage
                     }
                 ]}
             />

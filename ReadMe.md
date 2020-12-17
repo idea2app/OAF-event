@@ -1,13 +1,13 @@
 ![](src/image/WebCell-0.png)
 
-# WebCell scaffold
+# OpenAtom Foundation event
 
-App Project scaffold of **WebCell** v2
+开放原子基金会大会官网
 
-https://web-cell.dev/scaffold/
+https://tech-query.me/OAF-event/
 
-[![NPM Dependency](https://david-dm.org/EasyWebApp/scaffold.svg)][1]
-[![CI & CD](https://github.com/EasyWebApp/scaffold/workflows/CI%20&%20CD/badge.svg)][2]
+[![NPM Dependency](https://david-dm.org/TechQuery/OAF-event.svg)][1]
+[![CI & CD](https://github.com/TechQuery/OAF-event/workflows/CI%20&%20CD/badge.svg)][2]
 
 ## Technology stack
 
@@ -32,8 +32,8 @@ npm start
 npm run build
 ```
 
-[1]: https://david-dm.org/EasyWebApp/scaffold
-[2]: https://github.com/EasyWebApp/scaffold/actions
+[1]: https://david-dm.org/TechQuery/OAF-event
+[2]: https://github.com/TechQuery/OAF-event/actions
 [3]: https://typescriptlang.org
 [4]: https://web-cell.dev/
 [5]: https://getbootstrap.com
