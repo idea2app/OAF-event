@@ -1,5 +1,9 @@
-.banner {
+header.banner {
     height: 90vh;
+    padding: 2rem 1rem;
+    @media (min-width: 576px) {
+        padding: 4rem 2rem;
+    }
     background: url(./2020/image/banner.jpg) no-repeat center;
     background-size: cover;
     color: white;
@@ -12,7 +16,7 @@
         }
     }
     h1 {
-        color: var(--warning);
+        color: var(--bs-warning);
         font-weight: bold;
         & + p {
             font-size: xx-large;
