@@ -1,6 +1,6 @@
 import { auto } from 'browser-unhandled-rejection';
-import { serviceWorkerUpdate } from 'web-utility';
-import { documentReady, render, createCell } from 'web-cell';
+import { serviceWorkerUpdate, documentReady } from 'web-utility';
+import { DOMRenderer } from 'dom-renderer';
 
 import { PageFrame } from './page';
 
@@ -31,4 +31,4 @@ serviceWorker?.addEventListener('controllerchange', () =>
     window.location.reload()
 );
 
-documentReady.then(() => render(<PageFrame />));
+documentReady.then(() => new DOMRenderer().render(<PageFrame />));
