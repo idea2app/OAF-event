@@ -1,6 +1,6 @@
 import { auto } from 'browser-unhandled-rejection';
-import { serviceWorkerUpdate, documentReady } from 'web-utility';
 import { DOMRenderer } from 'dom-renderer';
+import { documentReady, serviceWorkerUpdate } from 'web-utility';
 
 import { PageFrame } from './page';
 

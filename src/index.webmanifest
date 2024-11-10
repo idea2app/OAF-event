@@ -1,20 +1,20 @@
 {
-  "name": "OpenAtom 2020 年度峰会",
-  "short_name": "OpenAtom 2020",
-  "start_url": ".",
-  "description": "OpenAtom 2020 年度峰会官方 App",
-  "scope": "/",
-  "display": "standalone",
-  "orientation": "any",
-  "lang": "zh-CN",
-  "dir": "ltr",
-  "theme_color": "rgba(0,0,0,0.5)",
-  "background_color": "transparent",
-  "icons": [
-    {
-      "src": "image/WebCell-0.png",
-      "type": "image/png",
-      "sizes": "300x300"
-    }
-  ]
+    "name": "OpenAtom 2020 年度峰会",
+    "short_name": "OpenAtom 2020",
+    "start_url": ".",
+    "description": "OpenAtom 2020 年度峰会官方 App",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "any",
+    "lang": "zh-CN",
+    "dir": "ltr",
+    "theme_color": "rgba(0,0,0,0.5)",
+    "background_color": "transparent",
+    "icons": [
+        {
+            "src": "image/WebCell-0.png",
+            "type": "image/png",
+            "sizes": "300x300"
+        }
+    ]
 }
