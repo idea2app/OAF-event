@@ -1,11 +1,11 @@
+import { TextColor } from 'boot-cell';
 import { FC, WebCellProps } from 'web-cell';
-import { Color } from 'boot-cell';
 
 import * as style from './Section.module.less';
 
 export interface SectionProps extends WebCellProps {
     subtitle?: string;
-    color?: Color;
+    color?: TextColor;
 }
 
 export const Section: FC<SectionProps> = ({
