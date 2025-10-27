@@ -13,5 +13,5 @@
         "checkJs": true,
         "outDir": "dist"
     },
-    "include": ["src/**/*", "*.mjs"]
+    "include": ["src/**/*", "*.ts"]
 }

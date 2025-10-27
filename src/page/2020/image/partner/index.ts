@@ -1,6 +1,6 @@
-export { default as al } from './al.png';
-export { default as baidu } from './baidu.png';
-export { default as huawei } from './huawei.png';
-export { default as ql } from './ql.png';
-export { default as sf } from './logo-b.svg';
-export { default as zs } from './zs.png';
+export const al = new URL('./al.png', import.meta.url) + '';
+export const baidu = new URL('./baidu.png', import.meta.url) + '';
+export const huawei = new URL('./huawei.png', import.meta.url) + '';
+export const ql = new URL('./ql.png', import.meta.url) + '';
+export const sf = new URL('./logo-b.svg', import.meta.url) + '';
+export const zs = new URL('./zs.png', import.meta.url) + '';

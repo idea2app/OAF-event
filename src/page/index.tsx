@@ -1,9 +1,9 @@
+import { Nav, NavLink,OffcanvasNavbar } from 'boot-cell';
 import { FC } from 'web-cell';
-import { Nav, OffcanvasNavbar, NavLink } from 'boot-cell';
 
-import logo from '../image/logo.png';
 import { HomePage } from './Home';
 
+const logo = new URL('../image/logo.png', import.meta.url) + '';
 const menu = [
     {
         title: '首页',
@@ -69,7 +69,7 @@ export const PageFrame: FC = () => (
                 <a
                     className="mx-1"
                     target="_blank"
-                    href="https://web-cell.dev/"
+                    href="https://web-cell.dev/" rel="noreferrer"
                 >
                     WebCell v3
                 </a>
@@ -77,7 +77,7 @@ export const PageFrame: FC = () => (
                 <a
                     className="mx-1"
                     target="_blank"
-                    href="https://bootstrap.web-cell.dev/"
+                    href="https://bootstrap.web-cell.dev/" rel="noreferrer"
                 >
                     BootCell v2
                 </a>

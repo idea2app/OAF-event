@@ -1,8 +1,8 @@
-export { default as pic02 } from './pic02.jpg';
-export { default as pic07 } from './pic07.jpg';
-export { default as pic15 } from './pic15.jpg';
-export { default as pic16 } from './pic16.jpg';
-export { default as pic17 } from './pic17.jpg';
-export { default as pic18 } from './pic18.jpg';
-export { default as pic19 } from './pic19.jpg';
-export { default as pic20 } from './pic20.jpg';
+export const pic02 = new URL('./pic02.jpg', import.meta.url) + '';
+export const pic07 = new URL('./pic07.jpg', import.meta.url) + '';
+export const pic15 = new URL('./pic15.jpg', import.meta.url) + '';
+export const pic16 = new URL('./pic16.jpg', import.meta.url) + '';
+export const pic17 = new URL('./pic17.jpg', import.meta.url) + '';
+export const pic18 = new URL('./pic18.jpg', import.meta.url) + '';
+export const pic19 = new URL('./pic19.jpg', import.meta.url) + '';
+export const pic20 = new URL('./pic20.jpg', import.meta.url) + '';
